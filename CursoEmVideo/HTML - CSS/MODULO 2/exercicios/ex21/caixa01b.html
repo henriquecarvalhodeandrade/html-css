@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+
+        h1 {
+            background-color: lightgrey;
+            height: 300px;
+            width: 300px;
+
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkgray;
+            /* shothands
+            border: width style color. Exemplo:
+            */
+            border: 10px solid darkgray;
+
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /* shorthand
+            padding: top right bottom left. Exemplo:
+            */
+            padding: 10px 10px 10px 10px;
+            /* perceba que todas são iguais, ou seja, poderiamos ter colodo apenas um único 10px */
+
+            /* também podemos colocar apenas 2 valores, porém, será: o primeiro valor para a em cima e para baixo e o segundo valor para a esquerda e direita. */
+
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            /* shorthand
+            margin: top right bottom left. Exemplo:
+            */
+            margin: 10px 10px 10px 10px;
+            margin: auto;
+        
+            /* margin: auto; 
+            Para deixa a caixa no meio da tela automaticamnete */
+
+
+            outline-width: 10px;
+            outline-style: dashed;
+            outline-color: blue;
+            /* shorthand
+            outline: width style color. Exemplo:
+            */
+            outline: 10px dashed blue;
+        }
+
+        a {
+            border-width: 5px;
+            border-style: solid;
+            border-color: red
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafops também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas em line-level</a>. Vamos ver como funciona?</p>
+</body>
+</html>
