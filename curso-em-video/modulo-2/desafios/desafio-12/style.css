@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+/* font-family: "Passion One", sans-serif; */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+/* font-family: 'Sriracha', cursive; */
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 70px;
+    text-align: center;
+    font-family: 'Passion One', sans-serif;
+}
+
+header h1 {
+    font: bold 50px 'Passion One', sans-serif;
+}
+
+header strong {
+    font: bold 20px 'Passion One', sans-serif;
+}
+
+p {
+    font: 20px 'Sriracha', cursive;
+    text-align: left;
+}
+
+#joaninha {
+    background-image: url('img/background001.jpg');
+    width: 100%;
+    height: 100%;
+}
