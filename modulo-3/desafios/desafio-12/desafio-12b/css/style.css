@@ -24,7 +24,6 @@ html, body {
 }
 
 /* Header */
-
 header {
     background-color: black;
     color: white;
@@ -38,16 +37,13 @@ header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
     font: bold 50px 'Passion One', sans-serif;
-    font-size: 8vw;
+    font-size: 7vw;
 }
 
 header > p {
     padding-bottom: 50px;
+    font-size: 4vw;
 }
-
-/* header strong {
-    font: bold 20px 'Passion One', sans-serif;
-} */
 
 header a, footer a {
     color: white;
@@ -60,23 +56,17 @@ header a:hover, footer a:hover {
 }
 
 /* Main */
-
-/* main {
-    background-color: white;
-} */
-
-/* main p {
-    font: 20px 'Sriracha', cursive;
-    text-align: left;
-} */
-
 section {
-    font-family: var(--fonte3);
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
     font-size: 3.15vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -87,54 +77,31 @@ section.normal {
 section.imagem {
     background-color: rgb(32, 32, 32);
     color: white;
+    background-size: cover;
+    background-position: right center;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.274);
+    background-attachment: fixed;
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.212);
+    background-color: rgba(0, 0, 0, 0.521);
     display: inline-block;
     padding: 5px;
+    text-shadow: 1px 1px 1px black;
 }
 
-/* .container {
-    background-image: url(img/target001.png);
-    background-color: rgb(255, 255, 255);
-    background-size: 100% 100%;
-    position: relative;
-    padding: 10px;
-    height: 80vh;
-    border: solid black;
-    margin: 5px;
-} */
+section#joaninha {
+    background-image: url(../img/background001.jpg);
+}
 
-/* .content {
-    background-image: url(img/target001.png);
-    background-size: 100% 100%;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    width: 40%;
-    height: 50%;
-    top: 50%;
-    left: 50%;
-    
-    transform: translate(-115%, -50%);
-} */
-
-/* #joaninha {
-    background-image: url(img/background001.jpg);
-} */
-
-/* #livro {
-    background-image: url(img/background002.jpg);
-} */
+section#livro {
+    background-image: url(../img/background002.jpg);
+}
 
 /* Footer */
-
 footer {
     background-color: black;
     color: white;
     padding: 10px;
     text-align: center;
-    /* font-family: 'Passion One', sans-serif; */
 }
-
-
