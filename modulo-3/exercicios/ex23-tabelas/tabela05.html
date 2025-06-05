@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 8px;
+        }
+
+        .destaque {
+            background-color: aquamarine;
+        }
+
+        col.c-nome {
+            background-color: brown;
+        }
+
+        col.c-sexo {
+            background-color: rgb(255, 255, 0);
+        }
+
+        col.c-grupo {
+            background-color: rgb(0, 119, 255);
+        }
+
+        col.c-profissao {
+            background-color: rgb(165, 255, 160);
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+
+        <!-- <colgroup>
+            <col class="c-nome">
+            <col class="c-sexo">
+            <col class="c-idade">
+            <col class="c-profissao">
+        </colgroup> -->
+
+        <!-- ou tambem podemos fazer assim... -->
+
+        <colgroup>
+            <col class="c-nome">
+            <col class="c-grupo" span="2">
+            <col class="c-profissao">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr class="destaque">
+            <td>Ben 10</td>
+            <td>M</td>
+            <td>15</td>
+            <td>Herói</td>
+        </tr>
+        <tr>
+            <td>Jubscreudo</td>
+            <td>M</td>
+            <td>24</td>
+            <td>Jogadô</td>
+        </tr>
+        <tr>
+            <td>Leo</td>
+            <td>M</td>
+            <td>20</td>
+            <td>Estagiário</td>
+        </tr>
+        <tr>
+            <td>Robson</td>
+            <td>F</td>
+            <td>24</td>
+            <td>Faz Programa</td>
+        </tr>
+        <tr>
+            <td>Alana</td>
+            <td>F</td>
+            <td>15</td>
+            <td>Banana</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>27</td>
+            <td>Cozinheira</td>
+        </tr>
+        <tr>
+            <td>Feipe</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Estudante</td>
+        </tr>
+    </table>
+</body>
+</html>
