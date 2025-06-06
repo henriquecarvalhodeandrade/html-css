@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 450px;
+            border: 2px solid black;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto excepturi unde veritatis velit ipsam, deserunt ex facilis culpa dolore mollitia harum corporis odit eius neque? Eaque aspernatur deserunt sint voluptatum.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag01.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag02.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag03.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto excepturi unde veritatis velit ipsam, deserunt ex facilis culpa dolore mollitia harum corporis odit eius neque? Eaque aspernatur deserunt sint voluptatum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores cupiditate ipsam deserunt distinctio sapiente nobis accusantium illum quae rem placeat, id dolorum incidunt veritatis? Praesentium ullam facilis quis atque. Veniam.</p>
+    
+    <iframe name="frame" id="tela" srcdoc="
+
+    <h1>Escolha uma das opções acima!</h1>
+    <img src='imagens/_.jpeg' alt=''>
+
+    " frameborder="1">
+        <p>Infelizmente seu navegador não é compatível com isto.</p>
+    </iframe>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto excepturi unde veritatis velit ipsam, deserunt ex facilis culpa dolore mollitia harum corporis odit eius neque? Eaque aspernatur deserunt sint voluptatum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores cupiditate ipsam deserunt distinctio sapiente nobis accusantium illum quae rem placeat, id dolorum incidunt veritatis? Praesentium ullam facilis quis atque. Veniam.</p>
+
+
+</body>
+</html>
