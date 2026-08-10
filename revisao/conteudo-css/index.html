@@ -13,6 +13,7 @@
 
         body {
             background-color: rgb(85, 85, 85);
+            font-family: monospace;
         }
 
         p {
@@ -100,7 +101,7 @@
         .red-box {
             background-color: crimson;
             color: #fff;
-            padding: 20px;
+            padding: 1.7em;
         }
 
         .blue-box {
@@ -134,6 +135,42 @@
         .clockwise-notation {
             padding: 20px 40px 60px 40px;
             margin: 20px 40px 60px 40px;
+        }
+
+        [type='radio'] {
+            margin: 20px;
+        }
+
+        .injected-text {
+            margin-bottom: -25px;
+            text-align: center;
+        }
+
+        .pink-text {
+            color: pink;
+        }
+
+        .yellow-text {
+            color: yellow;
+        }
+
+        .blue-text {
+            color: blue !important;
+        }
+
+        #orange-text {
+            color: orange;
+        }
+
+        .hex-color-box {
+            background-color: #000000;
+            padding: 50px;
+        }
+
+        .variaveis-coloridas{
+            --cor-fundo-escuro: black;
+            --cor-fundo-claro: white;
+            --cor-do-sol: yellow;
         }
          
     </style>
@@ -201,6 +238,20 @@
             <div class="different-paddings box green-box "><h3>padding and margin</h3></div>
             <div class="different-margins box green-box "><h3>padding and margin</h3></div>
             <div class="clockwise-notation box green-box "><h3>padding and margin</h3></div>
+        </div>
+
+        <form action="">
+            <label for="">
+                <input type="radio" name="indoor-outdoor" checked> Indoor </label>
+            </label>
+        </form>
+
+        <h2 class="pink-text yellow-text" id="orange-text">AAA</h2>
+        <h2 class="pink-text yellow-text" id="orange-text" style="color: white;">AAA</h2>
+        <h2 class="pink-text yellow-text blue-text" id="orange-text" style="color: white;">AAA</h2>
+
+        <div class="box">
+            <div class="hex-color-box"></div>
         </div>
 
 
