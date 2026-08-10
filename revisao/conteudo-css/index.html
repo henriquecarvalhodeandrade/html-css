@@ -11,8 +11,12 @@
 
     <style>
 
+        :root {
+            --cor-variavel-exemplo_1: pink;   
+        }
+
         body {
-            background-color: rgb(85, 85, 85);
+            background-color:  rgb(85, 85, 85);
             font-family: monospace;
         }
 
@@ -171,6 +175,16 @@
             --cor-fundo-escuro: black;
             --cor-fundo-claro: white;
             --cor-do-sol: yellow;
+
+
+            background-color: var(--cor-fundo-escuro, --cor-fundo-claro);
+        }
+
+        @media (max-width: 350px) {
+            :root {
+                --pensguin-size: 200px;
+                --penguin-skin: black;
+            }
         }
          
     </style>

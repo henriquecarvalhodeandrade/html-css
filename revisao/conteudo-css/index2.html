@@ -1,0 +1,152 @@
+<style>
+
+    .d1{background: lightskyblue;}
+    .d2{background: lightsalmon;}
+    .d3{background: paleturquoise;}
+    .d4{background: lightpink;}
+    .d5{background: palegreen;}
+
+    .container {
+        font-size: 40px;
+        width: 100%;
+        background: lightgray;
+
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 50px 50px 50px;
+    } 
+
+    .container2 {
+        font-size: 40px;
+        width: 100%;
+        background: lightgray;
+
+        display: grid;
+        grid-template-columns:auto 50px 10% 2fr 1fr;
+        grid-template-rows: 50px 50px;
+    } 
+
+    .container3 {
+        font-size: 40px;
+        width: 100%;
+        background: lightgray;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 50px;
+
+        column-gap: 20px;
+        row-gap : 20px;
+    } 
+
+    .container4 {
+        font-size: 40px;
+        width: 100%;
+        background: lightgray;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 50px;
+
+        gap: 10px 80px;
+    } 
+
+    .container5 {
+        font-size: 40px;
+        min-height: 300px;
+        width: 100%;
+        background: lightgray;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        gap: 10px 80px;
+
+        justify-items: center;
+        align-items: end;
+
+        /* grid-template-rows: repeat(2, 1fr 50px) 20px; */
+        /* grid-template-rows: 1fr 50px 1fr 50px 20px; */
+        
+        /* grid-template-rows: repeat(3, minmax(90px, 1fr)); */
+        /* grid-template-rows: repeat(auto-fill, minmax(90px, 1fr)); */
+        /* grid-template-rows: repeat(auto-fit, minmax(90px, 1fr)); */
+
+
+    } 
+    
+    .item1{background: lightskyblue;}
+    .item2{
+        background: lightsalmon;
+        justify-self: center;
+    }
+    .item3{
+        background: paleturquoise;
+        align-self: end;
+    }
+    .item4{background: lightpink;}
+    
+    .item5{
+        background: palegreen;
+        grid-column: 2/4;
+        grid-row: 2 / 4;
+        grid-area: 1/1/2/4;
+    }
+
+
+</style>
+
+
+<div class="container">
+    <div class="d1">1</div>
+    <div class="d2">2</div>
+    <div class="d3">3</div>
+    <div class="d4">4</div>
+    <div class="d5">5</div>
+
+</div>
+
+<hr>
+
+<div class="container2">
+    <div class="d1">1</div>
+    <div class="d2">2</div>
+    <div class="d3">3</div>
+    <div class="d4">4</div>
+    <div class="d5">5</div>
+
+</div>
+
+<hr>
+
+<div class="container3">
+    <div class="d1">1</div>
+    <div class="d2">2</div>
+    <div class="d3">3</div>
+    <div class="d4">4</div>
+    <div class="d5">5</div>
+
+</div>
+
+<hr>
+
+<div class="container4">
+    <div class="d1">1</div>
+    <div class="d2">2</div>
+    <div class="d3">3</div>
+    <div class="d4">4</div>
+    <div class="d5">5</div>
+
+</div>
+
+<hr>
+
+<div class="container5">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+
+</div>
