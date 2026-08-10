@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <style>
+
+        body {
+            background-color: rgb(85, 85, 85);
+        }
+
+        p {
+            color: rgb(185, 148, 219);
+        }
+
+        .aliceblue-text{
+            color: aliceblue;
+        }
+
+        .red-text {
+            color: red;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+        
+        .small-font {
+            font-size: 5px;
+        }
+        
+        .bigger-font {
+            font-size: 50px;
+        }
+        
+        .different-font-family {
+            font-family: monospace;
+        }
+
+        .lobster-regular {
+            font-family: "Lobster", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .font-degrade {
+            font-family: "Lobster", Arial, Helvetica, sans-serif;
+        }
+        
+        .larger-image {
+            width: 500px;
+        }
+
+        .smaller-image {
+            width: 100px;
+        }
+
+        .greenyellow-border {
+            border-color: greenyellow;
+            border-width: 2px;
+            border-style: solid;
+        }
+
+        .rounded-radius {
+            border-radius: 10px;
+        }
+
+        .circular-radius {
+            border-radius: 50%;
+        }
+
+        .white-background {
+            background-color: white;
+        }
+
+        #h2-nome-henrique {
+            font-size: 70px;
+            color: blue;
+        }
+
+
+        .box {
+            border-style: solid;
+            border-color: black;
+            border-width: 5px;
+            text-align: center;
+        }
+
+        .yellow-box {
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        .red-box {
+            background-color: crimson;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .blue-box {
+            background-color: blue;
+            color: #fff;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .green-box {
+            background-color: green;
+            color: #fff;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .different-paddings {
+            padding-bottom: 0px;
+            padding-left: 30px;
+            padding-right: 210px;
+            padding-top: 150px;
+        }
+
+        .different-margins {
+            margin: 0px;
+            margin-left: 30px;
+            margin-right: 210px;
+            margin-top: 150px;
+        }
+
+        .clockwise-notation {
+            padding: 20px 40px 60px 40px;
+            margin: 20px 40px 60px 40px;
+        }
+         
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <h1 style="color: red;">Bem vindo ao meu site!</h1>
+        <h1 style="color: blue;">Bem vindo ao meu site!</h1>
+        <h1 class="red-text">Bem vindo ao meu site!</h1>
+
+        
+        
+    </header>
+
+    <hr>
+
+    <main>
+        <h2>AAA</h2>
+        <h2 class="small-font">AAA</h2>
+        <h2 class="bigger-font">AAA</h2>
+        <h2 class="different-font-family">AAA</h2>
+        <h2 class="lobster-regular">AAA</h2>
+        <h2 class="font-degrade">AAA</h2>
+        
+        
+        <p>Olá, tudo bem? Meu nome é Henrique e esse site é uma breve revisao de CSS (Cascading Style Sheet).</p>
+
+        <p class="aliceblue-text">Olá, tudo bem? Meu nome é Henrique e esse site é uma breve revisao de CSS (Cascading Style Sheet).</p>
+
+        <figure>
+            <img width="200" height="200" src="img/thomas-lipke-oIuDXlOJSiE-unsplash.jpg" alt="Aurora Boreal">
+            <figcaption>Aurora Boreal</figcaption>
+
+            <img class="larger-image" src="img/thomas-lipke-oIuDXlOJSiE-unsplash.jpg" alt="Aurora Boreal">
+            <figcaption>Aurora Boreal</figcaption>
+
+            <img class="smaller-image" src="img/thomas-lipke-oIuDXlOJSiE-unsplash.jpg" alt="Aurora Boreal">
+            <figcaption>Aurora Boreal</figcaption>
+
+
+
+        </figure>
+
+        <h2 class="greenyellow-border">HENRIQUE</h2>
+        
+        
+        <img class="smaller-image greenyellow-border" src="img/thomas-lipke-oIuDXlOJSiE-unsplash.jpg" alt="Aurora Boreal">
+        
+        <img class="smaller-image greenyellow-border rounded-radius" src="img/thomas-lipke-oIuDXlOJSiE-unsplash.jpg" alt="Aurora Boreal">
+        
+        <img class="smaller-image greenyellow-border circular-radius" src="img/thomas-lipke-oIuDXlOJSiE-unsplash.jpg" alt="Aurora Boreal">
+        
+        <h2 class="greenyellow-border white-background">HENRIQUE</h2>
+
+        <h2 id="h2-nome-henrique">HENRIQUE</h2>
+        <h2 id="h2-nome-henrique" class="red-text">HENRIQUE</h2>
+        <h2 id="h2-nome-henrique">HENRIQUE</h2>
+
+        <div class="box yellow-box">
+            <h3>margin</h3>
+            <div class="box red-box"><h3>padding and margin</h3></div>
+            <div class="box blue-box"><h3>padding and margin</h3></div>
+            <div class="different-paddings box green-box "><h3>padding and margin</h3></div>
+            <div class="different-margins box green-box "><h3>padding and margin</h3></div>
+            <div class="clockwise-notation box green-box "><h3>padding and margin</h3></div>
+        </div>
+
+
+
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>Feito por mim mesmo.</p>
+    </footer>
+</body>
+</html>
